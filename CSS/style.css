@@ -1,6 +1,158 @@
 *{
-    display: block;
     text-decoration: none;
     margin: 0px;
-    /* settings go here */
+    padding: 0px;
+    font-family: 'Mulish';
+    font-style: normal;
 }
+
+*:focus{
+    outline: none;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: none;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 121px;
+    width: 100%;
+    background-color: #368d82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topLogo{
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    height: 69px;
+    width: 69px;
+}
+
+.topLogo img{
+    height: 69px;
+    width: 69px;
+}
+
+header h1{
+    position: absolute;
+    top: 5px;
+    height: 59px;
+    width: 390px;
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+header h4{
+    position: absolute;
+    top: 50px;
+    height: 29px;
+    width: 390px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.statusBox{
+    position: absolute;
+    right: 23px;
+    top: 22px;
+    height: 46px;
+    width: 202px;
+    color: white;
+}
+
+.clockWidget{
+    position: absolute;
+    width: 162px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+.timeWidget{
+    position: absolute;
+    width: 162px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.statusBox img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 40px;
+    width: 40px;
+    border-style: inset;
+    border-radius: 45px;
+    border-width: 1px;
+    border-color: black;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0px;
+    left: 0px; 
+    height: 36px;
+    width: 84%;
+    display: flex;
+
+    gap: 0px 1px;
+}
+
+header nav a{
+    height: 36px;
+    width: 20%;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+header nav a:hover{
+    opacity: 1;
+}
+
+.selected{
+    opacity: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header input{
+    position: absolute;
+    bottom: 6px;
+    right: 3.3%;
+    height: 24px;
+    width: 120px;
+    text-indent: 20px;
+    border-radius: 20px;
+    border-width: 0px;
+    caret-color: #c3c3c3;
+
+}
+
+header input::placeholder{
+    background-image: url(../images/icons/search.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 2px 0px;
+    text-indent: 20px;
+    border-width: 0px;
+}
+
