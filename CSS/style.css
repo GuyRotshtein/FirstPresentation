@@ -23,6 +23,7 @@ header{
     top: 0px;
     left: 0px;
     height: 121px;
+    min-width: 800px;
     width: 100%;
     background-color: #368d82;
     display: flex;
@@ -164,9 +165,11 @@ header input::placeholder{
 }
 section{
     position: relative;
-    max-width: 1280px;
+    min-width: 1280px;
+    width: 100%;
+    height: auto;
     top: 117px;
-    padding: 25px;
+    padding: 0% 2%;
 }
 
 .info{
@@ -228,18 +231,24 @@ section{
     left: 128px;
     color: white;
 }
+
+#objectListArea{
+    position: relative;
+    width: 96%;
+    top: 30px;
+    height: 392px;
+}
 .upTasks{
     position: absolute;
     width: 600px;
     height: 392px;
-    margin-top: 30px;
 }
 .logStatus{
     position: absolute;
     width: 600px;
     height: 392px;
-    margin-top: 30px;
     right: 0px;
+    float: right;
 }
 .headerTasks, .headerStatus{
     position: absolute;
