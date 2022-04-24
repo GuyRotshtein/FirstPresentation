@@ -112,7 +112,6 @@ header nav{
     height: 36px;
     width: 84%;
     display: flex;
-
     gap: 0px 1px;
 }
 
@@ -156,3 +155,193 @@ header input::placeholder{
     border-width: 0px;
 }
 
+.brudCrumbs{
+    position: absolute;
+    width: 34px;
+    height: 1280;
+    top: 117px;
+    background-color: #368d82;
+}
+section{
+    position: relative;
+    max-width: 1280px;
+    top: 117px;
+    padding: 25px;
+}
+
+.info{
+    position: relative;
+    width: 500px;
+    height: 174px;
+    margin-top: 33px;
+}
+
+.info > div:nth-child(2){
+    position: absolute;
+    width: 270px;
+    height: 104px;
+    top: 17px;
+    right: 0px;
+}
+.info > div > h5{
+    position: relative;
+    width: 220px;
+    height: 20px;
+    top: 19px;
+}
+.info > div:nth-child(1){
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    top: 2px;
+    border: 2px solid black;
+}
+.info > div:nth-child(1) > img{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    margin-top: -135px;
+    margin-left: -130px;
+}
+.info > div:nth-child(1){
+    position: absolute;
+    z-index: 1000;
+    width: 27px;
+    height: 27px;
+    top: 136px;
+    left: 128px;
+    background-color: #368d82;
+} 
+.info > div:nth-child(1) > input{
+    z-index: 10;
+    width: 27px;
+    height: 27px;
+    top: 136px;
+    left: 128px;
+    opacity: 0;
+}
+.info > div:nth-child(1) > i{
+    width: 27px;
+    height: 27px;
+    top: 136px;
+    left: 128px;
+    color: white;
+}
+.upTasks{
+    position: absolute;
+    width: 600px;
+    height: 392px;
+    margin-top: 30px;
+}
+.logStatus{
+    position: absolute;
+    width: 600px;
+    height: 392px;
+    margin-top: 30px;
+    right: 0px;
+}
+.headerTasks, .headerStatus{
+    position: absolute;
+    width: 600px;
+    height: 52px;
+    background-color: #368d82;
+    text-align: center;
+}
+.upTasks .headerTasks > h4, h3{
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+ .logStatus .headerStatus > h4, h3{
+    position: absolute;
+    display: inline-block;
+    color: white;
+}
+.upTasks .headerTasks > h3{
+    position: relative;
+    display: inline-block;
+    margin:13px 35px;
+}
+.upTasks .headerTasks > h4{
+    position: relative;
+    margin-left: 67px;
+    margin-right: 67px;
+    opacity: 0.5;
+} 
+ .logStatus .headerStatus > h4{
+    position: absolute;
+    margin-left: 67px;
+    margin-right: 67px;
+    opacity: 0.5;
+} 
+.upTasks .tasks{
+    position: relative;
+    width: 600px;
+    height: 340px;
+    top:52px;
+    opacity: 0.3;
+    background-color: #368d82;
+}
+.logStatus .status{
+    position: relative;
+    width: 600px;
+    height: 340px;
+    top:52px;
+    background-color: #368d82;
+    opacity: 0.3;
+
+}
+.newTask{
+    position: relative;
+    width: 584px;
+    height: 50px;
+    top: 6px;
+    left: 8px;
+    /* box-shadow: 1px 1px 3px black; */
+}
+.newTask > .taskInfo {
+    position: absolute;
+    width: 275px;
+    height: 50px;
+    margin: 0 131px;
+    display: flex;
+    align-items: center;
+    color: #BD362F;
+    background-color: #ffffff;
+}
+Div.checkBoxDone{
+    position: absolute;
+    width: 131px;
+    height: 50px;
+    background-color: #ffffff;
+    opacity: 0.2;
+}
+.newTask > .checkBoxDone > input{
+    width: 16px;
+    height: 16px;
+    margin: 17px 10px;
+}
+.newTask .taskTime{
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    left: 406px;
+    background-color: #ffffff;
+    opacity: 0.2;
+}
+.tasks .taskTime > h5{
+    margin: 5px 10px;
+    color: #BD362F;    
+}
+.tasks .userControl{
+    position: absolute;
+    width: 68px;
+    height: 50px;
+    left: 516px;
+    background-color: #ffffff;
+}
+.tasks .userControl > a{
+    color: #0088cc;
+    margin-top: 3px;
+}
