@@ -1,4 +1,4 @@
-*{
+* {
     text-decoration: none;
     margin: 0px;
     padding: 0px;
@@ -6,11 +6,11 @@
     font-style: normal;
 }
 
-*:focus{
+*:focus {
     outline: none;
 }
 
-a{
+a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ a{
     background: none;
 }
 
-header{
+header {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -31,7 +31,7 @@ header{
     align-items: center;
 }
 
-.topLogo{
+.topLogo {
     position: absolute;
     top: 9px;
     left: 20px;
@@ -39,12 +39,12 @@ header{
     width: 69px;
 }
 
-.topLogo img{
+.topLogo img {
     height: 69px;
     width: 69px;
 }
 
-header h1{
+header h1 {
     position: absolute;
     top: 5px;
     height: 59px;
@@ -56,7 +56,7 @@ header h1{
     color: white;
 }
 
-header h4{
+header h4 {
     position: absolute;
     top: 50px;
     height: 29px;
@@ -68,7 +68,7 @@ header h4{
     color: white;
 }
 
-.statusBox{
+.statusBox {
     position: absolute;
     right: 23px;
     top: 22px;
@@ -77,7 +77,7 @@ header h4{
     color: white;
 }
 
-.clockWidget{
+.clockWidget {
     position: absolute;
     width: 162px;
     text-align: center;
@@ -85,7 +85,8 @@ header h4{
     font-weight: 400;
     font-size: 18px;
 }
-.timeWidget{
+
+.timeWidget {
     position: absolute;
     width: 162px;
     text-align: center;
@@ -94,7 +95,8 @@ header h4{
     font-size: 14px;
 
 }
-.statusBox img{
+
+.statusBox img {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -106,17 +108,17 @@ header h4{
     border-color: black;
 }
 
-header nav{
+header nav {
     position: absolute;
     bottom: 0px;
-    left: 0px; 
+    left: 0px;
     height: 36px;
     width: 84%;
     display: flex;
     gap: 0px 1px;
 }
 
-header nav a{
+header nav a {
     height: 36px;
     width: 20%;
     font-weight: bold;
@@ -124,17 +126,17 @@ header nav a{
     opacity: 0.5;
 }
 
-header nav a:hover{
+header nav a:hover {
     opacity: 1;
 }
 
-.selected{
+.selected {
     opacity: 1;
     font-weight: bold;
     font-size: 20px;
 }
 
-header input{
+header input {
     position: absolute;
     bottom: 6px;
     right: 3.3%;
@@ -147,7 +149,7 @@ header input{
 
 }
 
-header input::placeholder{
+header input::placeholder {
     background-image: url(../images/icons/search.png);
     background-size: 18px;
     background-repeat: no-repeat;
@@ -156,14 +158,15 @@ header input::placeholder{
     border-width: 0px;
 }
 
-.brudCrumbs{
+.brudCrumbs {
     position: absolute;
     width: 34px;
     height: 1280;
     top: 117px;
     background-color: #368d82;
 }
-section{
+
+section {
     position: relative;
     min-width: 1280px;
     width: 100%;
@@ -172,27 +175,29 @@ section{
     padding: 0% 2%;
 }
 
-.info{
+.info {
     position: relative;
     width: 500px;
     height: 174px;
     margin-top: 33px;
 }
 
-.info > div:nth-child(2){
+.info>div:nth-child(2) {
     position: absolute;
     width: 270px;
     height: 104px;
     top: 17px;
     right: 0px;
 }
-.info > div > h5{
+
+.info>div>h5 {
     position: relative;
     width: 220px;
     height: 20px;
     top: 19px;
 }
-.info > div:nth-child(1){
+
+.info>div:nth-child(1) {
     position: absolute;
     width: 170px;
     height: 170px;
@@ -200,14 +205,16 @@ section{
     top: 2px;
     border: 2px solid black;
 }
-.info > div:nth-child(1) > img{
+
+.info>div:nth-child(1)>img {
     position: absolute;
     width: 170px;
     height: 170px;
     margin-top: -135px;
     margin-left: -130px;
 }
-.info > div:nth-child(1){
+
+.info>div:nth-child(1) {
     position: absolute;
     z-index: 1000;
     width: 27px;
@@ -215,8 +222,9 @@ section{
     top: 136px;
     left: 128px;
     background-color: #368d82;
-} 
-.info > div:nth-child(1) > input{
+}
+
+.info>div:nth-child(1)>input {
     z-index: 10;
     width: 27px;
     height: 27px;
@@ -224,7 +232,8 @@ section{
     left: 128px;
     opacity: 0;
 }
-.info > div:nth-child(1) > i{
+
+.info>div:nth-child(1)>i {
     width: 27px;
     height: 27px;
     top: 136px;
@@ -232,125 +241,240 @@ section{
     color: white;
 }
 
-#objectListArea{
+#objectListArea {
     position: relative;
     width: 96%;
-    top: 30px;
+    margin-top: 30px;
     height: 392px;
 }
-.upTasks{
+
+.upTasks {
     position: absolute;
     width: 600px;
     height: 392px;
 }
-.logStatus{
+
+.logStatus {
     position: absolute;
     width: 600px;
     height: 392px;
     right: 0px;
     float: right;
 }
-.headerTasks, .headerStatus{
+
+.headerTasks, .headerStatus {
     position: absolute;
     width: 600px;
     height: 52px;
     background-color: #368d82;
     text-align: center;
 }
-.upTasks .headerTasks > h4, h3{
+
+.upTasks .headerTasks>h5, h4, h3 {
     position: relative;
     display: inline-block;
     color: white;
 }
- .logStatus .headerStatus > h4, h3{
-    position: absolute;
+
+.logStatus .headerStatus>h5, h4, h3 {
+    position: relative;
     display: inline-block;
     color: white;
 }
-.upTasks .headerTasks > h3{
+
+.upTasks .headerTasks>h3 {
     position: relative;
     display: inline-block;
-    margin:13px 35px;
+    margin: 13px 35px;
+    font-weight: bold;
+    font-size: 20px;
 }
-.upTasks .headerTasks > h4{
+
+.logStatus .headerStatus>h3 {
     position: relative;
-    margin-left: 67px;
-    margin-right: 67px;
-    opacity: 0.5;
-} 
- .logStatus .headerStatus > h4{
+    display: inline-block;
+    margin: 13px 35px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.upTasks .headerTasks>h4 {
     position: absolute;
-    margin-left: 67px;
-    margin-right: 67px;
-    opacity: 0.5;
-} 
-.upTasks .tasks{
-    position: relative;
-    width: 600px;
-    height: 340px;
-    top:52px;
-    opacity: 0.3;
-    background-color: #368d82;
+    width: 110px;
+    right: 27px;
+    top: 17px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
 }
-.logStatus .status{
+
+.upTasks .headerTasks> h5 {
+    position: absolute;
+    width: 110px;
+    left: 27px;
+    top: 17px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.upTasks .headerTasks>h4>a {
+    color: #c3ddda;
+}
+
+.upTasks .headerTasks>h4>a:hover {
+    color: white;
+}
+
+
+.upTasks .headerTasks>h5>a {
+    color: #c3ddda;
+}
+
+.upTasks .headerTasks>h5>a:hover {
+    color: white;
+}
+
+
+.logStatus .headerStatus>h4 {
+    position: absolute;
+    width: 110px;
+    right: 27px;
+    top: 17px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logStatus .headerStatus>h5 {
+    position: absolute;
+    width: 110px;
+    left: 27px;
+    top: 17px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logStatus .headerStatus>h4>a {
+    color: #c3ddda;
+}
+
+.logStatus .headerStatus>h4>a:hover {
+    color: white;
+}
+
+.logStatus .headerStatus>h5>a {
+    color: #c3ddda;
+}
+
+.logStatus .headerStatus>h5>a:hover {
+    color: white;
+}
+
+
+.upTasks .tasks {
     position: relative;
     width: 600px;
     height: 340px;
-    top:52px;
+    top: 52px;
+    background-color: #c2dcd9;
+}
+
+.logStatus .status {
+    position: relative;
+    width: 600px;
+    height: 340px;
+    top: 52px;
     background-color: #368d82;
     opacity: 0.3;
 
 }
-.newTask{
+
+.newTask {
     position: relative;
     width: 584px;
     height: 50px;
     top: 6px;
+    padding-top: 4px;
     left: 8px;
+    background:none;
     /* box-shadow: 1px 1px 3px black; */
 }
-.newTask > .taskInfo {
+.taskBackdrop{
     position: absolute;
+    width: 584px;
+    height: 50px;
+    background-color: #f3f8f7;
+}
+
+.newTask>.taskInfo {
+    position: absolute;
+    display: block;
     width: 275px;
     height: 50px;
-    margin: 0 131px;
+    margin: 0px 131px;
     display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
     align-items: center;
     color: #BD362F;
     background-color: #ffffff;
 }
-Div.checkBoxDone{
+
+Div.checkBoxDone {
     position: absolute;
     width: 131px;
     height: 50px;
-    background-color: #ffffff;
-    opacity: 0.2;
+
 }
-.newTask > .checkBoxDone > input{
+
+Div.checkBoxDone>span {
+    position: absolute;
+    left: 26px;
+    top: 17px;
+    height: auto;
+    width: 95px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.newTask>.checkBoxDone>input {
     width: 16px;
     height: 16px;
     margin: 17px 10px;
 }
-.newTask .taskTime{
+
+.newTask .taskTime {
     position: absolute;
     width: 110px;
     height: 50px;
     left: 406px;
-    background-color: #ffffff;
-    opacity: 0.2;
 }
-.tasks .taskTime > h5{
-    margin: 5px 10px;
-    color: #BD362F;    
+
+.tasks .taskTime>h5 {
+    display: block;
+    margin: 6px 10px;
+    height: auto;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #BD362F;
 }
-.tasks .userControl{
+
+.tasks .userControl {
     position: absolute;
     width: 68px;
     height: 50px;
     left: 516px;
     background-color: #ffffff;
 }
-.tasks .userControl > a{
+
+.tasks .userControl>a {
     color: #0088cc;
     margin-top: 3px;
 }
