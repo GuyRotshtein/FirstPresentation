@@ -227,16 +227,119 @@ header input::placeholder {
 /* Pets in list are links, so "a". made full and empty */
 .emptyEntry{
     position: relative;
+    margin-top: 5px;
     height: 60px;
-    width:99.98%;
+    width:99.2%;
     background-color: #d2e5e3;
+}
+
+.addEntry{
+    position: relative;
+    margin-top: 5px;
+    height: 60px;
+    width:99.2%;
+    background-color: #d2e5e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addEntry > img{
+    position: relative;
+    height: 26px;
+    width: 26px;
+    background-color: white;
+    border-radius: 25px;
 }
 
 .petEntry{
     position: relative;
+    margin-top: 5px;
     height: 60px;
-    width:99.98%;
+    width:99.2%;
+    background-color: none;
+}
+
+.entryBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f8f7;
+}
+
+.petEntryLogistic{
+    position: absolute;
+    left: 0px;
+    width: 24%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.petEntryLogistic > span{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.petEntryName{
+    position: absolute;
+    left: 275px;
+    width: 61.4%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     background-color: white;
+}
+
+.petEntryName > img{
+    position: absolute;
+    top: 10px;
+    left: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.petEntryName > span{
+    position: absolute;
+    top: 20px;
+    height: auto;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    width: 430px;
+}
+
+.petEntryStatus{
+    position: absolute;
+    right: 0px;
+    height: 60px;
+    width: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 0px;
+}
+
+.petEntryStatus > div{
+    position: relative;
+    height: 24px;
+    width: 80%;
+}
+
+.petEntryStatus > div > span{
+    padding-top: 2px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.petEntryStatus > div > img{
+    position: absolute;
+    left: 0px;
+    height: 24px;
+    width: 24px;
 }
 
 .brudCrumbs {
