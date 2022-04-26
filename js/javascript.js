@@ -13,7 +13,7 @@ window.onload = () =>{
         clockWidget.innerHTML = "Good Evning, Greg";
     }
 
-    // adding new task        
+    // adding new task       
     let arrClasses = ['taskInfo','checkBoxDone','taskTime','userControl'];
     let divContent = ['Take barkley for a walk','Feed Barkley', 'Take barkley for a walk','Feed Barkley',
                       'Make sure to give Barkley his medicine', 'Take barkley for a walk'];
@@ -26,7 +26,7 @@ window.onload = () =>{
 
         newTaksDiv.classList.add('newTask');
         spanElement.classList.add('taskBackdrop');
-        document.getElementsByClassName("tasks")[0].appendChild(newTaksDiv);
+        document.getElementsByClassName("tasks")[0].appendChild(newTaksDiv)
         newTaksDiv.appendChild(spanElement);
 
         for(let i = 0; i < 4; i++){
@@ -89,5 +89,4 @@ window.onload = () =>{
         }
     }
 
-    //add new logistic status
 }
