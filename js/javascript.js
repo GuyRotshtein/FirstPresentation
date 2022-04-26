@@ -88,9 +88,8 @@ window.onload = () =>{
             }
         }
     }
-
+  
     //add new status 
-
     let divStatusContent = ['Kibble 25kg food bag', 'Simba quality snacks bag', 'Medical pills (in my notes)'];
     let timeStatus   = ['3 Days ago', '25 Days', '44 Days'];
 
