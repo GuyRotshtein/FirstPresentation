@@ -652,6 +652,15 @@ Div.checkBoxDone>span {
     margin-top: 3px;
 }
 
+.plusIcon{
+    position: absolute;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: 285px;
+}
+
 .owners {
     position: absolute;
     width: 475px;
