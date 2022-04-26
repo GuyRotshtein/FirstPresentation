@@ -155,6 +155,192 @@ header input::placeholder {
     text-indent: 20px;
     border-width: 0px;
 }
+#petListBackground{
+    position: absolute;
+    top: 190px;
+    left: 5%;
+    height: 527px;
+    width: 90%;
+    background-color: #c2dcd9;
+}
+
+#listHeader{
+    position: absolute;
+    top: 0x;
+    left: 0px;
+    height: 59px;
+    width: 100%;
+    background-color: #368d82;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#listHeader h1{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    height: 40%;
+    width: 10%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#listHeader h2{
+    position: absolute;
+    top: 30%;
+    left: 1.5%;
+    height: 40%;
+    width: 22%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#listHeader h3{
+    position: absolute;
+    top: 30%;
+    left: 76.5%;
+    height: 40%;
+    width: 22%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#petList{
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    height: 465px;
+    width: 99.86%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.07%;
+    gap: 5px 0px;
+}
+
+/* Pets in list are links, so "a". made full and empty */
+.emptyEntry{
+    position: relative;
+    margin-top: 5px;
+    height: 60px;
+    width:99.2%;
+    background-color: #d2e5e3;
+}
+
+.addEntry{
+    position: relative;
+    margin-top: 5px;
+    height: 60px;
+    width:99.2%;
+    background-color: #d2e5e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addEntry > img{
+    position: relative;
+    height: 26px;
+    width: 26px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.petEntry{
+    position: relative;
+    margin-top: 5px;
+    height: 60px;
+    width:99.2%;
+    background-color: none;
+}
+
+.entryBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f8f7;
+}
+
+.petEntryLogistic{
+    position: absolute;
+    left: 0px;
+    width: 24%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.petEntryLogistic > span{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.petEntryName{
+    position: absolute;
+    left: 275px;
+    width: 61.4%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.petEntryName > img{
+    position: absolute;
+    top: 10px;
+    left: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.petEntryName > span{
+    position: absolute;
+    top: 20px;
+    height: auto;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    width: 430px;
+}
+
+.petEntryStatus{
+    position: absolute;
+    right: 0px;
+    height: 60px;
+    width: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 0px;
+}
+
+.petEntryStatus > div{
+    position: relative;
+    height: 24px;
+    width: 80%;
+}
+
+.petEntryStatus > div > span{
+    padding-top: 2px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.petEntryStatus > div > img{
+    position: absolute;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+}
 
 .brudCrumbs {
     position: absolute;
