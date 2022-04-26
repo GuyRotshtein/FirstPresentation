@@ -819,6 +819,11 @@ Div.checkBoxDone>span {
 
     background-color: #f3f8f7;
 }
+#formSection > h3{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
 #formSection > label> h3{
     color: black;
     font-size: 18px;
