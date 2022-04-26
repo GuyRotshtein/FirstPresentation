@@ -10,7 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="/js/javascript.js"></script>
+        <script src="./js/javascript.js"></script>
 
     <title>Document</title>
 </head>
@@ -37,9 +37,49 @@
     </header>
     <nav class="breadCrumbs">
         <a href="./#" class="firstBreadCrumb">Home</a>
-        <a href="./#" class="BreadCrumb">My Pets</a>
+        <a href="./Listpage.html" class="BreadCrumb">My Pets</a>
         <a href="./#" class="currentBreadCrumb">Add a pet</a>
     </nav>
+
+    <section id="formWrapper">
+        <form class="PetForm"action="./get_params_addPet.php" method="get" autocomplete="on">
+            <h1>Add a new pet</h1>
+            <div id="formSection">
+                <label><h3>Pet's name:&nbsp;</h3><input type="text" required name="fullName" value=""></label>
+            </div>
+            <div id="formSection">
+                <label><h3>asgfdah</h3><input type="text" required name="fullName"></label>
+            </div>
+            <div id="formSection">
+                <h2> testing radio uwu</h2>
+                <h3>asgfdah</h3>
+                <label>Yes <input type="radio" name="subscribed" value="yes"></label>
+                <label>No<input type="radio" name="subscribed" value="no"></label>
+            </div>
+            <div id="formSection">
+                c
+            </div>
+            <div id="formSection">
+                d
+            </div>
+            <div id="formSection">
+                <input id="submitButton" type="submit" value="Create pet page">
+                <br>
+                <button type="button"><a href="./Listpage.html">Discard</a></button>
+            </div>
+                        <!-- 
+                TODO list:
+
+                section 1: name input and image input (img by file input)
+
+                section 2: species input (2 parts, radio input and taxt input with suggest)
+
+                section 3: birthday and age (birthday with dropdowns, age calculated by output)
+
+                section 4: Accept/cancel buttons
+             -->
+        </form >
+    </section>
 </body>
 
 </html>
