@@ -34,7 +34,7 @@ header {
 .topLogo {
     position: absolute;
     top: 9px;
-    left: 20px;
+    left: 1.7%;
     height: 69px;
     width: 69px;
 }
@@ -347,14 +347,46 @@ header input::placeholder {
     width: 24px;
 }
 
-.brudCrumbs {
+.breadCrumbs {
     position: absolute;
-    width: 34px;
-    height: 1280;
+    height: 34px;
+    width: 100%;
     top: 117px;
+    display: flex;
+    padding: 1px 1.7%;
     background-color: #368d82;
 }
 
+.breadCrumbs > .firstBreadCrumb{
+    position: relative;
+    height: 32px;
+    width:122px;
+    background-image: url(../images/icons/firstBreadCrumb.png);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 18px;
+    color: #E9F2F1;
+}
+.breadCrumbs > a{
+    position: relative;
+    height: 32px;
+    width:131px;
+    background-image:url(../images/icons/BreadCrumb.png);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 18px;
+    color: #E9F2F1;
+}
+.breadCrumbs > .currentBreadCrumb{
+    position: relative;
+    height: 32px;
+    width:131px;
+    background-image:url(../images/icons/currentBreadCrumb.png);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4F4F4F;
+}
 section {
     position: relative;
     min-width: 1280px;
