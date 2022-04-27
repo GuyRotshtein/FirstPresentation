@@ -633,14 +633,13 @@ h3 {
     background-color: #ffffff;
 }
 
-Div.checkBoxDone {
+.checkBoxDone {
     position: absolute;
     width: 131px;
     height: 50px;
-
 }
 
-Div.checkBoxDone>span {
+.checkBoxDone>span {
     position: absolute;
     left: 26px;
     top: 17px;
@@ -653,7 +652,7 @@ Div.checkBoxDone>span {
 
 }
 
-.newTask>.checkBoxDone>input {
+.checkBoxDone>input {
     width: 16px;
     height: 16px;
     margin: 17px 10px;
