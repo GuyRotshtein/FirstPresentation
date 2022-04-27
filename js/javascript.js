@@ -88,5 +88,83 @@ window.onload = () =>{
             }
         }
     }
+  
+    //add new status 
+    let divStatusContent = ['Kibble 25kg food bag', 'Simba quality snacks bag', 'Medical pills (in my notes)'];
+    let timeStatus   = ['3 Days ago', '25 Days', '44 Days'];
 
+    for(let l = 0; l < 6; l++){
+        let newTaksDiv = document.createElement("div");
+        let spanElement = document.createElement("span");
+
+        newTaksDiv.classList.add('newTask');
+        spanElement.classList.add('taskBackdrop');
+        document.getElementsByClassName("status")[0].appendChild(newTaksDiv)
+        newTaksDiv.appendChild(spanElement);
+
+        for(let i = 0; i < 4; i++){
+
+            let newDiv = document.createElement("div");
+            newDiv.classList.add(arrClasses[i]); 
+            newTaksDiv.appendChild(newDiv);
+
+            if(i == 0){
+                newDiv.innerHTML = divStatusContent[l];
+                newTaksDiv.appendChild(newDiv);
+                if (l == 0){
+                    newDiv.style.color = '#BD362F';
+                }else{
+                    newDiv.style.color = '#383838';
+                }
+            }
+            if(i == 1){
+                let checkBoxInput = document.createElement("input");
+                let checkBoxDoneElement = document.createElement("span");
+                checkBoxInput.setAttribute("type", "checkbox");
+                checkBoxDoneElement.innerHTML = 'Mark as refilled'; 
+                newDiv.appendChild(checkBoxInput);
+                newDiv.appendChild(checkBoxDoneElement);
+
+            }
+            if(i == 2){
+                for(let j =0; j < 2; j++){
+                    let h5 = document.createElement("h5");
+                    newDiv.appendChild(h5);
+
+                    // add a content for h5 element 
+                    if(j == 0){
+                        h5.innerHTML = 'Ends in:';                        
+                    }else{
+                        h5.innerHTML = timeStatus[l];                                              
+                    }
+
+                    // add color for h5 element, the default color giving from css file
+                    if (l == 0){
+                        h5.style.color = '#BD362F';
+                    }
+                }
+            }
+            if(i == 3){
+                let aContent = ['edit', 'remove'];
+                for(let k =0; k < 2; k++){
+                    let a = document.createElement("a");
+                    var link = document.createTextNode(aContent[k]);
+                    a.href = '#';
+                    a.appendChild(link); 
+                    newDiv.appendChild(a);
+                }
+            }
+
+            if(l > 2){
+                if(l == 3){
+                    let imageElement = document.createElement("img");
+                    imageElement.classList.add('plusIcon');
+                    imageElement.src = '../images/icons/Add_an_essential_1.png';
+                    newTaksDiv.appendChild(imageElement);
+                }
+                spanElement.classList.add('taskBackdrop');
+                newTaksDiv.appendChild(spanElement);
+            }
+        }
+    }
 }
