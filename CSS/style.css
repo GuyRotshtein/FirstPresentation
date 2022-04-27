@@ -29,6 +29,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .topLogo {
@@ -360,10 +361,10 @@ header input::placeholder {
 .breadCrumbs {
     position: absolute;
     height: 34px;
-    width: 100%;
+    width: 98.3%;
     top: 117px;
     display: flex;
-    padding: 1px 1.7%;
+    padding: 01px 1.7% 0% 0%;
     background-color: #368d82;
 }
 
@@ -404,7 +405,7 @@ section {
     position: relative;
     min-width: 801px;
     width: 100%;
-    height: auto;
+    height: 100px;
     top: 151px;
     padding: 0% 2%;
 }
@@ -805,6 +806,28 @@ h3 {
     color: #368d82;
 }
 
+
+#formWrapper {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #c2dcd9;
+    padding: 40px;
+    box-shadow: 1px 1px 3px #368d82;
+}
+#formWrapper .btn {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #368d82;
+    border-color: #368d82;
+    font-size: larger;
+}
+
+#formWrapper .custom-file{
+    position: relative;
+    margin-bottom: 25px;
+}
 .success {
     color: rgb(95, 201, 95);
 }
