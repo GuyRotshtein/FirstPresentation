@@ -789,3 +789,7 @@ Div.checkBoxDone>span {
     top: 6px;
     color: #368d82;
 }
+
+.success{
+    color: rgb(95, 201, 95);
+}
