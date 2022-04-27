@@ -23,7 +23,7 @@ header {
     top: 0px;
     left: 0px;
     height: 121px;
-    min-width: 800px;
+    min-width: 801px;
     width: 100%;
     background-color: #368d82;
     display: flex;
@@ -156,18 +156,20 @@ header input::placeholder {
     text-indent: 20px;
     border-width: 0px;
 }
-#petListBackground{
+
+#petListBackground {
     position: absolute;
     top: 190px;
-    left: 5%;
+    margin-left: 5%;
+    margin-right: auto;
     height: 527px;
     width: 90%;
     background-color: #c2dcd9;
 }
 
-#listHeader{
+#listHeader {
     position: absolute;
-    top: 0x;
+    top: 0px;
     left: 0px;
     height: 59px;
     width: 100%;
@@ -177,10 +179,11 @@ header input::placeholder {
     align-items: center;
 }
 
-#listHeader h1{
-    position: absolute;
+#listHeader h1 {
+    position: relative;
     top: 30%;
-    left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     height: 40%;
     width: 30%;
     text-align: center;
@@ -189,7 +192,7 @@ header input::placeholder {
     font-size: 20px;
 }
 
-#listHeader h2{
+#listHeader h2 {
     position: absolute;
     top: 30%;
     left: 5.3%;
@@ -201,7 +204,7 @@ header input::placeholder {
     font-size: 16px;
 }
 
-#listHeader h3{
+#listHeader h3 {
     position: absolute;
     top: 30%;
     right: 5.3%;
@@ -213,10 +216,9 @@ header input::placeholder {
     font-size: 16px;
 }
 
-#petList{
+#petList {
     position: absolute;
     top: 58px;
-    left: 0px;
     height: 465px;
     width: 98.46%;
     flex-wrap: wrap;
@@ -224,15 +226,15 @@ header input::placeholder {
 }
 
 /* Pets in list are links, so "a". made full and empty */
-.emptyEntry{
+.emptyEntry {
     position: relative;
     margin-top: 5px;
     height: 60px;
-    width:100%;
+    width: 100%;
     background-color: #d2e5e3;
 }
 
-.addEntry{
+.addEntry {
     position: relative;
     margin-top: 5px;
     height: 60px;
@@ -242,7 +244,8 @@ header input::placeholder {
     justify-content: center;
     align-items: center;
 }
-.addEntry > a {
+
+.addEntry>a {
     position: relative;
     height: 26px;
     width: 26px;
@@ -250,29 +253,29 @@ header input::placeholder {
     border-radius: 25px;
 }
 
-.addEntry > a >img{
+.addEntry>a>img {
     height: 26px;
     width: 26px;
     background-color: white;
     border-radius: 25px;
 }
 
-.petEntry{
+.petEntry {
     position: relative;
     margin-top: 5px;
     height: 60px;
-    width:100%;
+    width: 100%;
     background-color: none;
 }
 
-.entryBackground{
+.entryBackground {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #f3f8f7;
 }
 
-.petEntryLogistic{
+.petEntryLogistic {
     position: absolute;
     left: 0px;
     width: 23.85%;
@@ -281,13 +284,13 @@ header input::placeholder {
     justify-content: center;
 }
 
-.petEntryLogistic > span{
+.petEntryLogistic>span {
     color: black;
     font-size: 14px;
     font-weight: bold;
 }
 
-.petEntryName{
+.petEntryName {
     position: absolute;
     left: 23.85%;
     width: 60.7%;
@@ -298,7 +301,7 @@ header input::placeholder {
     background-color: white;
 }
 
-.petEntryName > img{
+.petEntryName>img {
     position: absolute;
     top: 10px;
     left: 95px;
@@ -306,7 +309,7 @@ header input::placeholder {
     width: 40px;
 }
 
-.petEntryName > span{
+.petEntryName>span {
     position: absolute;
     top: 20px;
     height: auto;
@@ -316,7 +319,7 @@ header input::placeholder {
     width: 430px;
 }
 
-.petEntryStatus{
+.petEntryStatus {
     position: absolute;
     right: 0px;
     height: 60px;
@@ -329,21 +332,28 @@ header input::placeholder {
     gap: 0px 0px;
 }
 
-.petEntryStatus > div{
+.petEntryStatus>div {
     position: relative;
     height: 24px;
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
 }
 
-.petEntryStatus > div > span{
-    padding-top: 2px;
+.petEntryStatus>div>span {
+    position: relative;
+    width: 100px;
+    height: 24px;
+    bottom: 8px;
     color: black;
     font-size: 14px;
     font-weight: bold;
 }
-.petEntryStatus > div > img{
-    position: absolute;
-    left: 0px;
+
+.petEntryStatus>div>img {
+    position: relative;
     height: 24px;
     width: 24px;
 }
@@ -358,39 +368,42 @@ header input::placeholder {
     background-color: #368d82;
 }
 
-.breadCrumbs > .firstBreadCrumb{
+.breadCrumbs>.firstBreadCrumb {
     position: relative;
     height: 32px;
-    width:122px;
+    width: 122px;
     background-image: url(../images/icons/firstBreadCrumb.png);
     background-repeat: no-repeat;
     font-weight: bold;
     font-size: 18px;
     color: #E9F2F1;
 }
-.breadCrumbs > a{
+
+.breadCrumbs>a {
     position: relative;
     height: 32px;
-    width:131px;
-    background-image:url(../images/icons/BreadCrumb.png);
+    width: 131px;
+    background-image: url(../images/icons/BreadCrumb.png);
     background-repeat: no-repeat;
     font-weight: bold;
     font-size: 18px;
     color: #E9F2F1;
 }
-.breadCrumbs > .currentBreadCrumb{
+
+.breadCrumbs>.currentBreadCrumb {
     position: relative;
     height: 32px;
-    width:131px;
-    background-image:url(../images/icons/currentBreadCrumb.png);
+    width: 131px;
+    background-image: url(../images/icons/currentBreadCrumb.png);
     background-repeat: no-repeat;
     font-weight: bold;
     font-size: 18px;
     color: #4F4F4F;
 }
+
 section {
     position: relative;
-    min-width: 1280px;
+    min-width: 801px;
     width: 100%;
     height: 100px;
     top: 151px;
@@ -599,7 +612,7 @@ h3 {
     width: 600px;
     height: 340px;
     top: 52px;
-    background-color: #368d82;
+    background-color: #c2dcd9;
 }
 
 .newTask {
@@ -634,14 +647,13 @@ h3 {
     background-color: #ffffff;
 }
 
-Div.checkBoxDone {
+.checkBoxDone {
     position: absolute;
     width: 131px;
     height: 50px;
-
 }
 
-Div.checkBoxDone>span {
+.checkBoxDone>span {
     position: absolute;
     left: 26px;
     top: 17px;
@@ -654,20 +666,20 @@ Div.checkBoxDone>span {
 
 }
 
-.newTask>.checkBoxDone>input {
+.checkBoxDone>input {
     width: 16px;
     height: 16px;
     margin: 17px 10px;
 }
 
-.newTask .taskTime {
+.taskTime {
     position: absolute;
     width: 110px;
     height: 50px;
     left: 406px;
 }
 
-.tasks .taskTime>h5 {
+.taskTime>h5 {
     display: block;
     margin: 6px 10px;
     height: auto;
@@ -677,7 +689,7 @@ Div.checkBoxDone>span {
     color: #383838;
 }
 
-.tasks .userControl {
+.userControl {
     position: absolute;
     width: 68px;
     height: 50px;
@@ -685,9 +697,18 @@ Div.checkBoxDone>span {
     background-color: #ffffff;
 }
 
-.tasks .userControl>a {
+.userControl>a {
     color: #0088cc;
     margin-top: 3px;
+}
+
+.plusIcon {
+    position: absolute;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: 285px;
 }
 
 .owners {
@@ -733,14 +754,17 @@ Div.checkBoxDone>span {
 ::-webkit-scrollbar {
     width: 16px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #c2dcd9;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #ffffff;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #368d82;
@@ -782,6 +806,7 @@ Div.checkBoxDone>span {
     color: #368d82;
 }
 
+
 #formWrapper {
     position: relative;
     width: 500px;
@@ -803,3 +828,195 @@ Div.checkBoxDone>span {
     position: relative;
     margin-bottom: 25px;
 }
+.success {
+    color: rgb(95, 201, 95);
+}
+
+@media (max-width: 800px) {
+
+
+    #petListBackground {
+        position: relative;
+        top: 71px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+
+
+    #listHeader {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 59px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #368d82;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #listHeader h1 {
+        position: relative;
+        top: 30%;
+        height: 34px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #listHeader h2 {
+        color: transparent;
+    }
+
+    #listHeader h3 {
+        color: transparent;
+    }
+
+    #petList {
+        position: relative;
+        top: 71px;
+        height: auto;
+        width: 94.4%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        padding: 2.2% 2.2% 4.4% 2.2%;
+        border-radius: 10px;
+        background-color: #c2dcd9;
+    }
+
+
+    .petEntry {
+        position: relative;
+        margin-top: 0%;
+        height: 40px;
+        width: 100%;
+        background-color: none;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .entryBackground {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        background-color: #368d82;
+        border-radius: 5px;
+    }
+
+    .petEntryLogistic {
+        position: absolute;
+        height: 40px;
+        width: 20%;
+        background: none;
+    }
+
+    .petEntryLogistic>span {
+        color: transparent;
+        background: none;
+    }
+
+    .petEntryName {
+        position: relative;
+        left: 0%;
+        width: 100%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background: none;
+    }
+
+    .petEntryName>img {
+        position: relative;
+        top: 15%;
+        left: 40%;
+        height: 70%;
+        width: auto;
+    }
+
+    .petEntryName>span {
+        position: absolute;
+        top: 10px;
+        height: 20px;
+        width: auto;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+
+    .petEntryStatus {
+        height: 40px;
+        width: 100%;
+    }
+
+    .petEntryStatus>div {
+        position: relative;
+        height: 24px;
+        width: 100%;
+    }
+
+    .petEntryStatus>div>span {
+        color: transparent;
+    }
+
+    .petEntryStatus>div>img {
+        position: relative;
+        top: 10%;
+        right: 30%;
+        height: 80%;
+        width: auto;
+        opacity: 0;
+    }
+
+    .emptyEntry {
+        position: relative;
+        margin-top: 8px;
+        height: 40px;
+        width: 100%;
+        background-color: #d6e7e5;
+    }
+
+    .addEntry {
+        position: relative;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 0px;
+        width: 0px;
+        background: none;
+    }
+
+    .addEntry>a {
+        position: relative;
+        top: 255px;
+        height: 26px;
+        width: 26px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+    .addEntry>a>img {
+        height: 26px;
+        width: 26px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+
+    
+}
+
