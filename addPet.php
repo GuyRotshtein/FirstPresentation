@@ -35,8 +35,8 @@
             $age = $_GET["age"];
         
             echo "<h1>Name: " . $pet_name .  "</h1><br>";
-            echo "<h3>Species: " . $species .  "</h3><br>";
-            echo "<h3>Age: " . $age .  "</h3><br>"; 
+            echo "<h2>Species: " . $species .  "</h2><br>";
+            echo "<h2>Age: " . $age .  "</h2><br>"; 
         ?>        
     </section>    
 </body>
