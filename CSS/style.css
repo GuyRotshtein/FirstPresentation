@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .topLogo {
@@ -403,7 +403,6 @@ header input::placeholder {
 
 section {
     position: relative;
-    min-width: 801px;
     width: 100%;
     height: 100px;
     top: 151px;
@@ -424,6 +423,8 @@ section {
     top: 17px;
     right: 0px;
 }
+
+
 
 .info>div>h5 {
     position: relative;
@@ -715,6 +716,7 @@ h3 {
     position: absolute;
     width: 475px;
     height: 178px;
+    top: 0px;
     right: 0px;
     border: 1px solid #368d82;
 }
@@ -815,6 +817,7 @@ h3 {
     padding: 40px;
     box-shadow: 1px 1px 3px #368d82;
 }
+
 #formWrapper .btn {
     width: 100%;
     margin-top: 15px;
@@ -823,10 +826,11 @@ h3 {
     font-size: larger;
 }
 
-#formWrapper .custom-file{
+#formWrapper .custom-file {
     position: relative;
     margin-bottom: 25px;
 }
+
 .success {
     color: rgb(95, 201, 95);
 }
@@ -888,7 +892,7 @@ h3 {
         position: relative;
         top: 71px;
         height: auto;
-        width: 94.4%;
+        width: 91.2%;
         margin-left: auto;
         margin-right: auto;
         flex-wrap: wrap;
@@ -990,6 +994,7 @@ h3 {
         margin-top: 8px;
         height: 40px;
         width: 100%;
+        border-radius: 5px;
         background-color: #d6e7e5;
     }
 
@@ -1086,48 +1091,422 @@ h3 {
         margin-left: -40px;
     }
 
-    .humburger .listMenu > a{ 
-        display: inline-block;
-        font-size: 14px;
-        color: #0088cc;
-    }
-    
-    .humburger .listMenu > ul > .selectedOnMenu{
-        background-color: #ffffff;
-        border:2px solid #368d82;
-        list-style-type:none;
+
+    section {
+        position: relative;
+        width: 95.6%;
+        height: auto;
+        top: 71px;
+        padding: 0% 2.2% 0% 2.2%;
+
     }
 
-    .humburger .listMenu > ul > .selectedOnMenu > a{
+    .info {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 115px;
+        margin-top: 11px;
+    }
+
+
+    .info>div:nth-child(2) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+    }
+
+    .info>div>h1 {
+        position: relative;
+        width: 100%;
+        height: 34px;
+        top: 0px;
+        text-align: Center;
+        font-size: 26px;
+        color: transparent;
+
+    }
+
+    .info>div>h1>span {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        left: 0%;
+        color: black;
+
+    }
+
+    .info>div>h5 {
+        position: relative;
+        width: 70%;
+        height: 18px;
+        top: 19px;
+        padding-left: 30%;
+        text-align: left;
+        font-size: 16px;
+
+    }
+
+    .info>div:nth-child(1) {
+        position: absolute;
+        bottom: 0px;
+        width: 25%;
+        height: auto;
+        border-radius: 0%;
+        border: 1px solid transparent;
+        box-shadow: 1px 2px 3px transparent;
+    }
+
+    .info>div:nth-child(1) .profilePic {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid black;
+        box-shadow: 1px 2px 3px black;
+    }
+
+    .info>div:nth-child(1)>.cameraIcon {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 75%;
+        left: 75%;
+        background-color: #368d82;
+        border-radius: 50%;
+        border: 2px solid #368d82;
+    }
+
+    .info>div:nth-child(1)>input {
+        position: absolute;
+        top: 77%;
+        left: 80%;
+        width: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+
+    .owners {
+        position: relative;
+        width: 100%;
+        height: 178px;
+        top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .owners .headerOwners {
+        width: 100%;
+        height: 36px;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .ownersList {
+        position: absolute;
+        width: 100%;
+        height: 142px;
+        background-color: #c2dcd9;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .owner1 {
+        position: relative;
+        width: 98%;
+        height: 40px;
+        margin-top: 5px;
+        left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f3f8f7;
+    }
+
+    .owner1 h4 {
+        position: relative;
+        height: 28px;
+        width: 90%;
+        font-size: 18px;
+        left: 5%;
+        top: 6px;
+        color: black;
+    }
+
+    .owner1 h3 {
+        position: relative;
+        opacity: 0;
+        position: relative;
+        width: 0px;
+        height: 0px;
+    }
+
+    .owner1 svg {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        left: 85%;
+        top: 6px;
         color: #368d82;
     }
 
-    .menuHumburger {
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        margin-left: -700px;
-        color: #ffffff;
-    }
-    .statusBox img {
-        position: absolute;
-        margin-top: -8px;
-    }
-    header h1 {
+
+    #objectListArea {
         position: relative;
-        margin-top: 5px;
+        width: 100%;
+        height: auto;
+        top: 48px;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px 0px;
     }
-    section {
+
+    .upTasks {
+        position: relative;
+        width: 100%;
         height: auto;
     }
-    /*when opening menu*/
-    /* #formWrapper {
-        margin: -650px auto;
-        opacity: 0.5;
-    }
-    header{
-        opacity: 0.5;
-    } */
-}
 
+    .logStatus {
+        position: relative;
+        width: 100%;
+        height: auto;
+        right: 0px;
+        margin-top: 48px;
+        float: none;
+    }
+
+
+    .headerTasks,
+    .headerStatus {
+        position: absolute;
+        width: 100%;
+        height: 32px;
+        background: none;
+        text-align: center;
+    }
+
+
+    .upTasks .headerTasks>h3 {
+        position: relative;
+        margin: 0px 0px;
+        color: black;
+    }
+
+    .logStatus .headerStatus>h3 {
+        position: relative;
+        margin: 0px 0px;
+        color: black;
+    }
+
+    .upTasks .headerTasks>h4 {
+        position: relative;
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+
+    .upTasks .headerTasks>h5 {
+        position: relative;
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+
+    .upTasks .headerTasks>h4>a {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: #c3ddda;
+    }
+
+    .upTasks .headerTasks>h4>a:hover {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+    .upTasks .headerTasks>h5>a {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: #c3ddda;
+    }
+
+    .upTasks .headerTasks>h5>a:hover {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+    .logStatus .headerStatus>h4 {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+    .logStatus .headerStatus>h5 {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+    .logStatus .headerStatus>h4>a {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+    .logStatus .headerStatus>h4>a:hover {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+    .logStatus .headerStatus>h5>a {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+    .logStatus .headerStatus>h5>a:hover {
+        height: 0px;
+        width: 0px;
+        display: none;
+        color: white;
+    }
+
+
+    .upTasks .tasks {
+        position: relative;
+        width: 95.6%;
+        height: 320px;
+        top: 32px;
+        flex-wrap: wrap;
+        padding: 2.2% 2.2% 2.2% 2.2%;
+        border-radius: 10px;
+        background-color: #c2dcd9;
+    }
+
+    .logStatus .status {
+        position: relative;
+        width: 95.6%;
+        height: 320px;
+        top: 32px;
+        background-color: #c2dcd9;
+        flex-wrap: wrap;
+        padding: 2.2% 2.2% 2.2% 2.2%;
+        border-radius: 10px;
+        background-color: #c2dcd9;
+
+    }
+
+    .newTask {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        top: 6px;
+        padding-top: 4px;
+        left: 8px;
+        background: none;
+    }
+
+    .taskBackdrop {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background-color: #f3f8f7;
+    }
+
+    .newTask>.taskInfo {
+        position: absolute;
+        display: block;
+        width: 275px;
+        height: 50px;
+        margin: 0px 131px;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        align-items: center;
+        color: #BD362F;
+        background-color: #ffffff;
+    }
+
+    .checkBoxDone {
+        position: absolute;
+        width: 131px;
+        height: 50px;
+    }
+
+    .checkBoxDone>span {
+        position: absolute;
+        left: 26px;
+        top: 17px;
+        height: auto;
+        width: 95px;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    .checkBoxDone>input {
+        width: 16px;
+        height: 16px;
+        margin: 17px 10px;
+    }
+
+    .taskTime {
+        position: absolute;
+        width: 110px;
+        height: 50px;
+        left: 406px;
+    }
+
+    .taskTime>h5 {
+        display: block;
+        margin: 6px 10px;
+        height: auto;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        color: #383838;
+    }
+
+    .userControl {
+        position: absolute;
+        width: 68px;
+        height: 50px;
+        left: 516px;
+        background-color: #ffffff;
+    }
+
+    .userControl>a {
+        color: #0088cc;
+        margin-top: 3px;
+    }
+
+    .plusIcon {
+        position: absolute;
+        z-index: 9999;
+        width: 30px;
+        height: 30px;
+        top: 12px;
+        left: 285px;
+    }
+
+}
