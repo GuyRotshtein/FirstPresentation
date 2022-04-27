@@ -806,7 +806,6 @@ h3 {
     color: #368d82;
 }
 
-
 #formWrapper {
     position: relative;
     width: 500px;
@@ -832,8 +831,12 @@ h3 {
     color: rgb(95, 201, 95);
 }
 
-@media (max-width: 800px) {
+.humburger, .menuHumburger{
+    display: none;
+}
 
+/*mobile style*/
+@media (max-width: 800px) {
 
     #petListBackground {
         position: relative;
@@ -1016,7 +1019,115 @@ h3 {
         border-radius: 25px;
     }
 
+    header{
+        height: 70px;
+        background-color: #368d82;
+    }
+    header .brudCrumbs,.searchInput,.topLogo,.statusBox > span{
+        visibility: hidden;
+    }
 
+    nav{
+        visibility: hidden;
+    }
     
+    .humburger {
+        display: none;
+        position: relative;
+        z-index: 9999;
+        width: 240px;
+        max-height: auto;
+        height: 100%;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 4px black;
+        text-align: center;
+    }
+    .humburger .information {
+        position: relative;
+        height: 150px;
+    }
+    .humburger .information > img {
+        position: absolute;
+        margin: 20px auto;
+        width: 80px;
+        height: 80px;
+    }
+    .humburger .information > h3 {
+        color: black;
+        position: relative;
+        margin: 100px auto;
+
+    }
+    .humburger .listMenu{
+        position: relative;
+        width: 160px;
+        height: 450px;
+        background-color: #ffffff;
+        margin: auto auto;
+    }
+
+    .humburger .listMenu > ul > li{
+        position: relative;
+        width: 160px;
+        height: 30px;
+        margin-top: 15px;
+        font-weight: bold;
+        background-color: #368d82;
+        color: white;
+        list-style-type:none;
+    }
+
+    .humburger .listMenu > ul > .line{
+        position: relative;
+        width: 240px;
+        height: 4px;
+        background-color: #d9d9e2;
+        margin-top: 80px;
+        margin-left: -40px;
+    }
+
+    .humburger .listMenu > a{ 
+        display: inline-block;
+        font-size: 14px;
+        color: #0088cc;
+    }
+    
+    .humburger .listMenu > ul > .selectedOnMenu{
+        background-color: #ffffff;
+        border:2px solid #368d82;
+        list-style-type:none;
+    }
+
+    .humburger .listMenu > ul > .selectedOnMenu > a{
+        color: #368d82;
+    }
+
+    .menuHumburger {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        margin-left: -700px;
+        color: #ffffff;
+    }
+    .statusBox img {
+        position: absolute;
+        margin-top: -8px;
+    }
+    header h1 {
+        position: relative;
+        margin-top: 5px;
+    }
+    section {
+        height: auto;
+    }
+    /*when opening menu*/
+    /* #formWrapper {
+        margin: -650px auto;
+        opacity: 0.5;
+    }
+    header{
+        opacity: 0.5;
+    } */
 }
 
