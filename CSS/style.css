@@ -805,6 +805,10 @@ h3 {
     color: #368d82;
 }
 
+.success {
+    color: rgb(95, 201, 95);
+}
+
 @media (max-width: 800px) {
 
 
@@ -988,8 +992,8 @@ h3 {
         background-color: white;
         border-radius: 25px;
     }
+
+
+    
 }
 
-.success {
-    color: rgb(95, 201, 95);
-}
