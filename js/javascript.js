@@ -159,7 +159,7 @@ window.onload = () =>{
                 if(l == 3){
                     let imageElement = document.createElement("img");
                     imageElement.classList.add('plusIcon');
-                    imageElement.src = '../images/icons/Add_an_essential_1.png';
+                    imageElement.src = './images/icons/Add_an_essential_1.png';
                     newTaksDiv.appendChild(imageElement);
                 }
                 spanElement.classList.add('taskBackdrop');

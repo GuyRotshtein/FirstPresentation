@@ -9,6 +9,15 @@
 *:focus {
     outline: none;
 }
+span{
+    color: black;
+}
+.formTitle {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
 
 a {
     display: flex;
@@ -16,6 +25,13 @@ a {
     align-items: center;
     color: white;
     background: none;
+}
+
+.missedTaskColor {
+    color: #BD362F;
+}
+.todayTaskColor{
+    color: #ffa834;
 }
 
 header {
@@ -83,6 +99,8 @@ header h4 {
     justify-content: center;
     font-weight: 400;
     font-size: 18px;
+    color: white;
+    font-weight: bold;
 }
 
 .timeWidget {
@@ -92,6 +110,8 @@ header h4 {
     justify-content: center;
     font-weight: 400;
     font-size: 14px;
+    color: white;
+    font-weight: bold;
 }
 
 .statusBox img {
@@ -349,7 +369,6 @@ header input::placeholder {
     width: 100px;
     height: 24px;
     bottom: 8px;
-    color: black;
     font-size: 14px;
     font-weight: bold;
 }
@@ -405,8 +424,6 @@ header input::placeholder {
 
 section {
     position: relative;
-    width: 100%;
-    height: 100px;
     top: 151px;
     padding: 0% 2%;
 }
@@ -470,7 +487,7 @@ section {
 
 #objectListArea {
     position: relative;
-    width: 96%;
+    width: 100%;
     margin-top: 30px;
     height: 392px;
 }
@@ -719,7 +736,7 @@ h3 {
     width: 475px;
     height: 178px;
     top: 0px;
-    right: 0px;
+    right: 2%;
     border: 1px solid #368d82;
 }
 
@@ -844,149 +861,6 @@ h3 {
 }
 
 /* Home Page style*/
-.upComingEvents {
-    position: relative;
-    max-width: 1169px;
-    width: 100%;
-    height: 396px;
-    margin: auto;
-}
-
-.headerEvents {
-    position: relative;
-    width: 1169px;
-    height: 57px;
-    background-color: #368d82;
-}
-
-.headerEvents .status {
-    position: absolute;
-    margin-left: 201px;
-}
-
-.headerEvents .petName {
-    position: absolute;
-    margin-left: 800px;
-}
-
-.headerEvents .taskDeadline {
-    position: absolute;
-    margin-left: 1020px;
-}
-
-.headerEvents .upComEvent {
-    position: absolute;
-    margin-left: 356px;
-    font-size: 20px;
-    margin-top: 17px;
-}
-
-.headerEvents>h5 {
-    position: absolute;
-    font-size: 16px;
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-.eventList {
-    position: absolute;
-    width: 1169px;
-    height: 339px;
-    background-color: #c2dcd9;
-}
-
-.newEvent {
-    position: relative;
-    width: 976px;
-    height: 60px;
-    margin-top: 6px;
-    margin-left: 7px;
-    background-color: #ffffff;
-}
-
-.newEvent .checkBoxDone>span {
-    position: absolute;
-    font-size: 12px;
-    left: 26px;
-    margin-top: 5px;
-}
-
-.newEvent .checkBoxDone>input {
-    margin-top: 20px;
-}
-
-.iconStatus {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    margin-left: 200px;
-    margin-top: 14px;
-}
-
-.eventContent {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 390px;
-    height: 20px;
-    margin-left: 250px;
-    margin-top: 20px;
-}
-
-.eventContent>h5 {
-    position: absolute;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.eventPetName {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 800px;
-    font-weight: 100;
-    font-size: 16px;
-}
-
-.eventTime {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-left: 982px;
-    width: 173px;
-    height: 60px;
-    background-color: #c2dcd9;
-}
-
-.eventTime>h5 {
-    position: relative;
-    font-size: 16px;
-    font-weight: bold;
-    top: 18px;
-    height: 25px;
-}
-
-.reqReplacement {
-    position: relative;
-    max-width: 1169px;
-    width: 100%;
-    height: 202px;
-    margin: 17px auto;
-}
-
-.replacementList {
-    position: absolute;
-    width: 1169px;
-    height: 140px;
-    background-color: #c2dcd9;
-}
-
-.petPicture {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    margin-left: 720px;
-}
 
 .missedTaskColor {
     color: #BD362F;
@@ -999,8 +873,9 @@ h3 {
 .newEvent .taskBackdrop {
     position: absolute;
     width: 178px;
-    height: 60px;
+    height: 40px;
     margin-left: 976px;
+    text-align: center;
     background-color: #f3f8f7;
 }
 
@@ -1800,174 +1675,142 @@ h3 {
     left: 285px;
 }
 
-
-.upComingEvents {
+/* Home Page style*/
+.upComingEvents{
     position: relative;
+    max-width: 1169px;    
     width: 100%;
-    height: 340px;
+    height: 396px;
     margin: auto;
 }
-
-.headerEvents {
+.headerEvents{
     position: relative;
-    width: 100%;
-    height: 32px;
-    display: flex;
-    background: none;
+    width: 1169px;
+    height: 57px;
+    background-color: #368d82;
 }
-
-.headerEvents .status {
-    position: relative;
+.headerEvents .status{
+    position: absolute;
     margin-left: 201px;
-    display: none;
 }
-
-.headerEvents .petName {
-    position: relative;
+.headerEvents .petName{
+    position: absolute;
     margin-left: 800px;
-    display: none;
 }
-
-.headerEvents .taskDeadline {
-    position: relative;
+.headerEvents .taskDeadline{
+    position: absolute;
     margin-left: 1020px;
-    display: none;
 }
-
-.headerEvents .upComEvent {
-    position: relative;
-    width: auto;
+.headerEvents .upComEvent{
+    position: absolute;
+    margin-left: 356px;
     font-size: 20px;
-    margin: auto;
-    color: #212121;
-    font-weight: bold;
-    font-size: 20px;
+    margin-top: 17px;
 }
-
-.headerEvents>h5 {
+.headerEvents > h5{
     position: absolute;
     font-size: 16px;
     color: #ffffff;
     margin-top: 20px;
 }
-
-.eventList {
+.eventList{
     position: absolute;
-    width: 95.6%;
-    height: auto;
-    flex-wrap: wrap;
+    width: 1169px;
+    height: 339px;
     background-color: #c2dcd9;
-    padding: 0% 2.2% 2.2% 2.2%;
-    border-radius: 10px;
 }
-
-.newEvent {
+.newEvent{
     position: relative;
-    width: 95.6%;
-    height: 40px;
-    margin-top: 2.2%;
-    margin-left: 0px;
+    width: 976px;
+    height: 60px;
+    margin-top: 6px;
+    margin-left: 7px;
     background-color: #ffffff;
-    padding: 1.1% 2.2%;
-    border-radius: 5px;
-    box-shadow: 1px 2px 3px #cccccc;
 }
-
-.newEvent .checkBoxDone>span {
-    position: relative;
-    display: none;
-    height: 40px;
+.newEvent .checkBoxDone >span {
+    position: absolute;
+    font-size: 12px;
+    left: 26px;
+    margin-top: 5px;
 }
-
-.newEvent .checkBoxDone>input {
-
-    position: relative;
-    height: 16px;
-    margin: 7.5% 0px;
-
+.newEvent .checkBoxDone >input {
+    margin-top: 20px;
 }
-
-.iconStatus {
-    position: relative;
-    display: none;
+.iconStatus{
+    position:absolute;
+    width: 32px;
+    height: 32px;
+    margin-left: 200px;
+    margin-top: 14px;
 }
-
-.eventContent {
+.eventContent{
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 64%;
+    width: 390px;
     height: 20px;
-    left: 24%;
-    top: 2.2%;
-    margin-left: 0%;
-    margin-top: 3.3%;
+    margin-left: 250px;
+    margin-top: 20px;
 }
-
-.eventContent>h5 {
+.eventContent > h5{
     position: absolute;
     font-size: 16px;
     font-weight: bold;
 }
-
 .eventPetName {
-    display: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 800px;
+    font-weight: 100;
+    font-size: 16px;
 }
-
-.eventTime {
+.eventTime{
     position: relative;
     display: flex;
     justify-content: center;
     margin-left: 982px;
     width: 173px;
-    height: 40px;
+    height: 60px;
     background-color: #c2dcd9;
 }
-
-.eventTime>h5 {
+.eventTime > h5 {
     position: relative;
-    font-size: 8px;
+    font-size: 16px;
     font-weight: bold;
     top: 10px;
-    height: 20px;
+    height: 25px;
 }
-
-.reqReplacement {
+.reqReplacement{
     position: relative;
+    max-width: 1169px;    
     width: 100%;
-    height: 340px;
-    margin: auto;
+    height: 202px;
+    margin: 17px auto;
 }
-
 .replacementList {
     position: absolute;
-    width: 95.6%;
-    height: auto;
-    flex-wrap: wrap;
+    width: 1169px;
+    height: 140px;
     background-color: #c2dcd9;
-    padding: 0% 2.2% 2.2% 2.2%;
-    border-radius: 10px;
 }
-
-.petPicture {
+.petPicture{
     position: absolute;
-    width: 10%;
-    height: auto;
-    margin-top: 1.1%;
-    right: 2.2%;
-    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 720px;
 }
-
 
 .newEvent .taskBackdrop {
-    position: relative;
-    width: 20%;
+    position: absolute;
+    width: 178px;
     height: 40px;
-    left: 6%;
-    margin-left: 0px;
-    text-align: center;
-    background: none;
-    font-size: 8px;
-    font-weight: bold;
-    color: #777777;
+    padding-bottom: 20px;
+    margin-left: 976px;
+    background-color: #f3f8f7;
+}
+
+#indexSection{
+    position: relative;
+    top: 190px;
 }

@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+    <script src="./js/javascript.js"></script>
 </head>
 <body>
     <header>
@@ -22,11 +23,11 @@
             <img src="./images/greg.png">
         </div>
         <nav>
-            <a href="./#" class="selected">test 1</a>
-            <a href="./#">test 2</a>
-            <a href="./#">test 3</a>
-            <a href="./#">test 4</a>
-            <a href="./#">test 5</a>
+            <a href="./index.html">Home Page</a>
+            <a href="./Listpage.html"  class="selected">My Pets</a>
+            <a href="#">Events</a>
+            <a href="#">Calendar</a>
+            <a href="#">Logistics</a>
         </nav>
         <input class="searchInput" type="text" placeholder="Search">
         <svg class="menuHumburger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -36,7 +37,7 @@
     <nav class="breadCrumbs">
         <a href="./#" class="firstBreadCrumb">Home</a>
         <a href="./Listpage.html" class="BreadCrumb">My Pets</a>
-        <a href="./#" class="currentBreadCrumb">Add a pet</a>
+        <a href="./#" class="currentBreadCrumb">Pet List</a>
     </nav>
 
     <div class="humburger">
@@ -47,18 +48,18 @@
 
         <div class="listMenu">
             <ul>
-                <li class="selectedOnMenu"><a href="">HomePage</a></li>
-                <li><a href="">My Pets</a></li>
-                <li><a href="">Daily Events</a></li>
-                <li><a href="">Calendar</a></li>
-                <li><a href="">Logistic</a></li>
+                <li class="selectedOnMenu"><a href="./index.html">HomePage</a></li>
+                <li><a href="./Listpage.html">My Pets</a></li>
+                <li><a href="#">Daily Events</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Logistic</a></li>
                 <div class="line"></div>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Settings</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Settings</a></li>
             </ul>
-            <a href="">About us</a>
+            <a href="#">About us</a>
             <span>|</span>
-            <a href="">Support</a>
+            <a href="#">Support</a>
         </div>
     </div> 
     <div id="petListBackground">
@@ -72,8 +73,8 @@
                 <div class="entryBackground"></div>
                 <div class="petEntryLogistic">
                     <span>
-                        [Food name] <br/>
-                        in:[Time]
+                        Kibble 25kg food bag <br/>
+                        in: 3 days
                     </span>
                 </div>
                 <div class="petEntryName"> 
@@ -84,15 +85,14 @@
                 </div>
                 <div class="petEntryStatus">
                     <div>
-                        <img src="./images/Camera_Alt_Icon_1.png">
-                        <span>[status here]</span>
+                        <img src="./images/icons/Error_Icon_1.png">
+                        <span class="missedTaskColor">Task missed !</span>
                     </div>
-<!-- 
                     <div>
-                        <img src="./images/Camera_Alt_Icon_1.png">
-                        <span>text testo</span>
+                        <img src="./images/icons/Notification_Important_Icon_1.png">
+                        <span class="todayTaskColor">Close Task</span>
                     </div>
--->
+
                 </div>
             </a>
             <!-- Pets here! -->
