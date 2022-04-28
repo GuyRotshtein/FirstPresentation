@@ -838,6 +838,9 @@ h3 {
     color: rgb(95, 201, 95);
 }
 
+<<<<<<< HEAD
+
+=======
 .humburger, .menuHumburger {
     display: none;
 }
@@ -1004,6 +1007,7 @@ h3 {
 }
 
 /*mobile style*/
+>>>>>>> 2afdf3d6c5be8b450dd5fe2c335bd1a88efbcb56
 @media (max-width: 800px) {
 
     header {
