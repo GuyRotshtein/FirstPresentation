@@ -167,4 +167,12 @@ window.onload = () =>{
             }
         }
     }
+
+    // jquery 
+    // $(document).ready(function(){
+
+    //     $(".menuHumburger").click(function(){
+    //       $(".humburger").show();
+    //     });
+    // });
 }

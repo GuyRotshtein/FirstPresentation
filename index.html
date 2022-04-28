@@ -8,12 +8,63 @@
     <title>Home Page</title>
 </head>
 <body>
+    <header>
+        <a class="topLogo" href="./#"><img src="./images/logo.png"></a>
+        <h1>ManaPet</h1>
+        <h4 class="brudCrumbs">Your logistics assistant for the pet's daily life</h4>
+        <div class="statusBox">
+            <span class="clockWidget"> time go here</span>
+            <br>
+            <span class="timeWidget"> good time username </span>
+            <img src="./images/greg.png">
+        </div>
+        <nav>
+            <a href="./#" class="selected">test 1</a>
+            <a href="./#">test 2</a>
+            <a href="./#">test 3</a>
+            <a href="./#">test 4</a>
+            <a href="./#">test 5</a>
+        </nav>
+        <input class="searchInput" type="text" placeholder="Search">
+        <svg class="menuHumburger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </header>
+    <nav class="breadCrumbs">
+        <a href="./#" class="firstBreadCrumb">Home</a>
+        <a href="./Listpage.html" class="BreadCrumb">My Pets</a>
+        <a href="./#" class="currentBreadCrumb">Add a pet</a>
+    </nav>
+
+    <div class="humburger">
+        <div class="information">
+            <img src="./images/greg.png" alt="">
+            <h3>Greg</h3>
+        </div>
+
+        <div class="listMenu">
+            <ul>
+                <li class="selectedOnMenu"><a href="">HomePage</a></li>
+                <li><a href="">My Pets</a></li>
+                <li><a href="">Daily Events</a></li>
+                <li><a href="">Calendar</a></li>
+                <li><a href="">Logistic</a></li>
+                <div class="line"></div>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+            <a href="">About us</a>
+            <span>|</span>
+            <a href="">Support</a>
+        </div>
+    </div> 
+
     <section>
         <!-- Up Coming Events -->        
         <div class="upComingEvents">
             <div class="headerEvents">
                 <h5 class="status">Status</h5>
-                <h3 class="upComEvent">UPCOMING EVENTS</h3>
+                <h3 class="upComEvent">Upcoming events</h3>
                 <h5 class="petName">Pet's name</h5>
                 <h5 class="taskDeadline">Task deadline</h5>
             </div>
@@ -31,7 +82,7 @@
                     <div class="eventContent"><h5 class="missedTaskColor">Take barkely for a walk</h5></div>
                     <img class="petPicture" src="./images/Barkley_picture_1.png">
                     <h5 class="eventPetName">Sir barkely</h5>
-                    <span class="taskBackdrop eventTime"><h5 class="missedTaskColor">Today at: 7:00 - 7:30</h5></span>
+                    <span class="taskBackdrop eventTime"><h5 class="missedTaskColor">Today at:<br>7:00 - 7:30</h5></span>
                 </div>
 
                 <div class="newEvent">
@@ -45,7 +96,7 @@
                     <div class="eventContent"><h5 class="todayTaskColor">Feed Barkley</h5></div>
                     <img class="petPicture" src="./images/Barkley_picture_1.png">
                     <h5 class="eventPetName">Sir barkely</h5>
-                    <span class="taskBackdrop eventTime"><h5 class="todayTaskColor">Today at: 8:30 - 9:00</h5></span>
+                    <span class="taskBackdrop eventTime"><h5 class="todayTaskColor">Today at:<br>8:30 - 9:00</h5></span>
                 </div>
 
                 <div class="newEvent">
@@ -59,7 +110,7 @@
                     <div class="eventContent"><h5>Feed Fanuni</h5></div>
                     <img class="petPicture" src="./images/fanuni.png">
                     <h5 class="eventPetName">Fanuni</h5>
-                    <span class="taskBackdrop eventTime"><h5>Today at: 9:00 - 9:30</h5></span>
+                    <span class="taskBackdrop eventTime"><h5>Today at:<br>9:00 - 9:30</h5></span>
                 </div>
 
                 <div class="newEvent">
@@ -73,7 +124,7 @@
                     <div class="eventContent"><h5>Feed Mamramitzi</h5></div>
                     <img class="petPicture" src="./images/mamramitizi.png">
                     <h5 class="eventPetName">Mamramitzi</h5>
-                    <span class="taskBackdrop eventTime"><h5>Today at: 9:00 - 9:30</h5></span>
+                    <span class="taskBackdrop eventTime"><h5>Today at:<br>9:00 - 9:30</h5></span>
                 </div>
 
                 <div class="newEvent">
@@ -87,7 +138,7 @@
                     <div class="eventContent"><h5>Take barkely for a walk</h5></div>
                     <img class="petPicture" src="./images/Barkley_picture_1.png">
                     <h5 class="eventPetName">Sir barkely</h5>
-                    <span class="taskBackdrop eventTime"><h5>Today at: 18:00 - 18:30</h5></span>
+                    <span class="taskBackdrop eventTime"><h5>Today at:<br>18:00 - 18:30</h5></span>
                 </div>
 
             </div>
@@ -97,7 +148,7 @@
         <div class="reqReplacement">
             <div class="headerEvents">
                 <h5 class="status">Status</h5>
-                <h3 class="upComEvent">REQUUIRING REPLACEMENT</h3>
+                <h3 class="upComEvent">Upcoming Replacements</h3>
                 <h5 class="petName">Pet's name</h5>
                 <h5 class="taskDeadline">Expiration deadline</h5>
             </div>
@@ -115,7 +166,7 @@
                     <div class="eventContent"><h5 class="missedTaskColor">Kibble 25kg food bag</h5></div>
                     <img class="petPicture" src="./images/Barkley_picture_1.png">
                     <h5 class="eventPetName">Sir barkely</h5>
-                    <span class="taskBackdrop eventTime"><h5 class="missedTaskColor">3 days ago</h5></span>
+                    <span class="taskBackdrop eventTime"><h5 class="missedTaskColor">Ends in:<br>3 days ago</h5></span>
                 </div>
 
                 <div class="newEvent">
@@ -129,7 +180,7 @@
                     <div class="eventContent"><h5>Simba 10kg food bag</h5></div>
                     <img class="petPicture" src="./images/fanuni.png">
                     <h5 class="eventPetName">Fanuni</h5>
-                    <span class="taskBackdrop eventTime"><h5>End in 21 days</h5></span>
+                    <span class="taskBackdrop eventTime"><h5>Ends in:<br>21 days</h5></span>
                 </div>
             </div>
         </div>

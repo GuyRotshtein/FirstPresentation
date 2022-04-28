@@ -19,7 +19,7 @@
     <header>
         <a class="topLogo" href="./#"><img src="./images/logo.png"></a>
         <h1>ManaPet</h1>
-        <h4>Your logistics assistant for the pet's daily life</h4>
+        <h4 class="brudCrumbs">Your logistics assistant for the pet's daily life</h4>
         <div class="statusBox">
             <span class="clockWidget"> time go here</span>
             <br>
@@ -33,17 +33,56 @@
             <a href="./#">test 4</a>
             <a href="./#">test 5</a>
         </nav>
-        <input type="text" placeholder="Search">
+        <input class="searchInput" type="text" placeholder="Search">
+        <svg class="menuHumburger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
     </header>
-
     <nav class="breadCrumbs">
         <a href="./#" class="firstBreadCrumb">Home</a>
         <a href="./Listpage.html" class="BreadCrumb">My Pets</a>
-        <a href="./objectPage.html" class="BreadCrumb">Sir Barkley</a>
-        <a href="./objectPage.html" class="currentBreadCrumb">Pet Page</a>
+        <a href="./#" class="currentBreadCrumb">Add a pet</a>
     </nav>
 
+    <div class="humburger">
+        <div class="information">
+            <img src="./images/greg.png" alt="">
+            <h3>Greg</h3>
+        </div>
+
+        <div class="listMenu">
+            <ul>
+                <li class="selectedOnMenu"><a href="">HomePage</a></li>
+                <li><a href="">My Pets</a></li>
+                <li><a href="">Daily Events</a></li>
+                <li><a href="">Calendar</a></li>
+                <li><a href="">Logistic</a></li>
+                <div class="line"></div>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+            <a href="">About us</a>
+            <span>|</span>
+            <a href="">Support</a>
+        </div>
+    </div> 
+
     <section>
+        
+
+        <div class="info">
+            <div>
+                <img class="profilePic" src="./images/Barkley_picture_1.png">
+                <img class="cameraIcon" src="./images/Camera_Alt_Icon_1.png" alt="">
+                <input type="file">
+            </div>
+            <div>
+                <h1>Name: <span>Sir Barkley</span></h1>
+                <h5>Species: Mixed chiuaua</h5>
+                <h5>Age: 7 years old(Born 7.1.2015)</h5>
+            </div>
+        </div>
+
         <div class="owners">
             <div class="headerOwners">
                 <h5>Owners list</h5>
@@ -82,19 +121,6 @@
                         <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                     </svg>
                 </div>
-            </div>
-        </div>
-
-        <div class="info">
-            <div>
-                <img class="profilePic" src="./images/Barkley_picture_1.png">
-                <img class="cameraIcon" src="./images/Camera_Alt_Icon_1.png" alt="">
-                <input type="file">
-            </div>
-            <div>
-                <h1>Name: Sir Barkley</h1>
-                <h5>Species: Mixed chiuaua</h5>
-                <h5>Age: 7 years old(Born 7.1.2015)</h5>
             </div>
         </div>
 
