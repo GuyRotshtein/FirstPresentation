@@ -23,13 +23,11 @@ header {
     top: 0px;
     left: 0px;
     height: 121px;
-    min-width: 801px;
     width: 100%;
     background-color: #368d82;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .topLogo {
@@ -810,7 +808,8 @@ h3 {
 
 #formWrapper {
     position: relative;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     height: auto;
     margin: 20px auto;
     background-color: #c2dcd9;
@@ -982,6 +981,20 @@ h3 {
 /*mobile style*/
 @media (max-width: 800px) {
 
+    header {
+        position: relative;
+        height: 70px;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    section {        
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+
+    }
+    
     #petListBackground {
         position: relative;
         top: 71px;
@@ -991,7 +1004,6 @@ h3 {
         height: auto;
         background: none;
     }
-
 
     #listHeader {
         position: absolute;
@@ -1164,10 +1176,6 @@ h3 {
         border-radius: 25px;
     }
 
-    header{
-        height: 70px;
-        background-color: #368d82;
-    }
     header .brudCrumbs,.searchInput,.topLogo,.statusBox > span{
         visibility: hidden;
     }
@@ -1610,6 +1618,7 @@ h3 {
         margin: 17px 10px;
     }
 
+
     .taskTime {
         position: absolute;
         width: 110px;
@@ -1634,7 +1643,12 @@ h3 {
         left: 516px;
         background-color: #ffffff;
     }
+    #formWrapper > form{
+        width: 100%;
+        height: auto;
+    }
 
+}
     .userControl>a {
         color: #0088cc;
         margin-top: 3px;
