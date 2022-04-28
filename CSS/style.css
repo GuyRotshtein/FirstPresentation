@@ -18,6 +18,11 @@ a {
     background: none;
 }
 
+.h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
 header {
     position: absolute;
     top: 0px;
