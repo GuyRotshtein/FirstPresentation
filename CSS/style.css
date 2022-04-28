@@ -363,7 +363,7 @@ header input::placeholder {
 .breadCrumbs {
     position: absolute;
     height: 34px;
-    width: 98.3%;
+    width: 100%;
     top: 117px;
     display: flex;
     padding: 01px 1.7% 0% 0%;
@@ -838,55 +838,63 @@ h3 {
     color: rgb(95, 201, 95);
 }
 
-.humburger, .menuHumburger{
+.humburger, .menuHumburger {
     display: none;
 }
 
 /* Home Page style*/
-.upComingEvents{
+.upComingEvents {
     position: relative;
-    max-width: 1169px;    
+    max-width: 1169px;
     width: 100%;
     height: 396px;
     margin: auto;
 }
-.headerEvents{
+
+.headerEvents {
     position: relative;
     width: 1169px;
     height: 57px;
     background-color: #368d82;
 }
-.headerEvents .status{
+
+.headerEvents .status {
     position: absolute;
     margin-left: 201px;
 }
-.headerEvents .petName{
+
+.headerEvents .petName {
     position: absolute;
     margin-left: 800px;
 }
-.headerEvents .taskDeadline{
+
+.headerEvents .taskDeadline {
     position: absolute;
     margin-left: 1020px;
 }
-.headerEvents .upComEvent{
+
+.headerEvents .upComEvent {
     position: absolute;
     margin-left: 356px;
     font-size: 20px;
     margin-top: 17px;
 }
-.headerEvents > h5{
+
+.headerEvents>h5 {
     position: absolute;
     font-size: 16px;
     color: #ffffff;
     margin-top: 20px;
 }
-.eventList{
+
+.eventList {
     position: absolute;
     width: 1169px;
     height: 339px;
     background-color: #c2dcd9;
 }
-.newEvent{
+
+.newEvent {
     position: relative;
     width: 976px;
     height: 60px;
@@ -895,23 +903,26 @@ h3 {
     background-color: #ffffff;
 }
 
-.newEvent .checkBoxDone >span {
+.newEvent .checkBoxDone>span {
     position: absolute;
     font-size: 12px;
     left: 26px;
     margin-top: 5px;
 }
-.newEvent .checkBoxDone >input {
+
+.newEvent .checkBoxDone>input {
     margin-top: 20px;
 }
-.iconStatus{
-    position:absolute;
+
+.iconStatus {
+    position: absolute;
     width: 32px;
     height: 32px;
     margin-left: 200px;
     margin-top: 14px;
 }
-.eventContent{
+
+.eventContent {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -920,11 +931,13 @@ h3 {
     margin-left: 250px;
     margin-top: 20px;
 }
-.eventContent > h5{
+
+.eventContent>h5 {
     position: absolute;
     font-size: 16px;
     font-weight: bold;
 }
+
 .eventPetName {
     position: absolute;
     margin-top: 20px;
@@ -932,7 +945,8 @@ h3 {
     font-weight: 100;
     font-size: 16px;
 }
-.eventTime{
+
+.eventTime {
     position: relative;
     display: flex;
     justify-content: center;
@@ -941,37 +955,43 @@ h3 {
     height: 60px;
     background-color: #c2dcd9;
 }
-.eventTime > h5 {
+
+.eventTime>h5 {
     position: relative;
     font-size: 16px;
     font-weight: bold;
     top: 18px;
     height: 25px;
 }
-.reqReplacement{
+
+.reqReplacement {
     position: relative;
-    max-width: 1169px;    
+    max-width: 1169px;
     width: 100%;
     height: 202px;
     margin: 17px auto;
 }
+
 .replacementList {
     position: absolute;
     width: 1169px;
     height: 140px;
     background-color: #c2dcd9;
 }
-.petPicture{
+
+.petPicture {
     position: absolute;
     width: 40px;
     height: 40px;
     margin-top: 10px;
     margin-left: 720px;
 }
+
 .missedTaskColor {
     color: #BD362F;
 }
-.todayTaskColor{
+
+.todayTaskColor {
     color: #ffa834;
 }
 
@@ -993,16 +1013,134 @@ h3 {
         width: 100%;
     }
 
-    section {        
+    .breadCrumbs {
+        display: none;
+    }
+    section {
+        position: absolute;
+        height: auto;
+        max-width: 800px;
+        width: 100%;
+        top: 70px;
+    }
+
+    header .brudCrumbs, .searchInput, .topLogo, .statusBox>span {
+        visibility: hidden;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    .humburger {
+        display: none;
+        position: relative;
+        z-index: 9999;
+        width: 240px;
+        max-height: auto;
+        height: 100%;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 4px black;
+        text-align: center;
+    }
+
+    .humburger .information {
+        position: relative;
+        height: 150px;
+    }
+
+    .humburger .information>img {
+        position: absolute;
+        margin: 20px auto;
+        width: 80px;
+        height: 80px;
+    }
+
+    .humburger .information>h3 {
+        color: black;
+        position: relative;
+        margin: 100px auto;
+
+    }
+
+    .humburger .listMenu {
+        position: relative;
+        width: 160px;
+        height: 450px;
+        background-color: #ffffff;
+        margin: auto auto;
+    }
+
+    .humburger .listMenu>ul>li {
+        position: relative;
+        width: 160px;
+        height: 30px;
+        margin-top: 15px;
+        font-weight: bold;
+        background-color: #368d82;
+        color: white;
+        list-style-type: none;
+    }
+
+    .humburger .listMenu>ul>.line {
+        position: relative;
+        width: 240px;
+        height: 4px;
+        background-color: #d9d9e2;
+        margin-top: 80px;
+        margin-left: -40px;
+    }
+
+    .humburger .listMenu>a {
+        display: inline-block;
+        font-size: 14px;
+        color: #0088cc;
+    }
+
+    .humburger .listMenu>ul>.selectedOnMenu {
+        background-color: #ffffff;
+        border: 2px solid #368d82;
+        list-style-type: none;
+    }
+
+    .humburger .listMenu>ul>.selectedOnMenu>a {
+        color: #368d82;
+    }
+
+    .menuHumburger {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        color: #ffffff;
+    }
+
+    .statusBox img {
+        position: absolute;
+        margin-top: -8px;
+    }
+
+    header h1 {
+        position: relative;
+        margin-top: 5px;
+    }
+
+    #formWrapper {
         max-width: 800px;
         width: 100%;
         height: auto;
-
     }
-    
+
+    #formWrapper>form {
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+    }
+
     #petListBackground {
         position: relative;
-        top: 71px;
+        top: 0px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -1018,7 +1156,7 @@ h3 {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        background:none;
+        background: none;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -1182,14 +1320,14 @@ h3 {
         border-radius: 25px;
     }
 
-    header .brudCrumbs,.searchInput,.topLogo,.statusBox > span{
+    header .brudCrumbs, .searchInput, .topLogo, .statusBox>span {
         visibility: hidden;
     }
 
-    nav{
+    nav {
         visibility: hidden;
     }
-    
+
     .humburger {
         display: none;
         position: relative;
@@ -1201,23 +1339,27 @@ h3 {
         box-shadow: 1px 1px 4px black;
         text-align: center;
     }
+
     .humburger .information {
         position: relative;
         height: 150px;
     }
-    .humburger .information > img {
+
+    .humburger .information>img {
         position: absolute;
         margin: 20px auto;
         width: 80px;
         height: 80px;
     }
-    .humburger .information > h3 {
+
+    .humburger .information>h3 {
         color: black;
         position: relative;
         margin: 100px auto;
 
     }
-    .humburger .listMenu{
+
+    .humburger .listMenu {
         position: relative;
         width: 160px;
         height: 450px;
@@ -1225,7 +1367,7 @@ h3 {
         margin: auto auto;
     }
 
-    .humburger .listMenu > ul > li{
+    .humburger .listMenu>ul>li {
         position: relative;
         width: 160px;
         height: 30px;
@@ -1233,26 +1375,16 @@ h3 {
         font-weight: bold;
         background-color: #368d82;
         color: white;
-        list-style-type:none;
+        list-style-type: none;
     }
 
-    .humburger .listMenu > ul > .line{
+    .humburger .listMenu>ul>.line {
         position: relative;
         width: 240px;
         height: 4px;
         background-color: #d9d9e2;
         margin-top: 80px;
         margin-left: -40px;
-    }
-
-
-    section {
-        position: relative;
-        width: 95.6%;
-        height: auto;
-        top: 71px;
-        padding: 0% 2.2% 0% 2.2%;
-
     }
 
     .info {
@@ -1645,168 +1777,187 @@ h3 {
         left: 516px;
         background-color: #ffffff;
     }
-    #formWrapper > form{
+
+    #formWrapper>form {
         width: 100%;
         height: auto;
     }
 
 }
-    .userControl>a {
-        color: #0088cc;
-        margin-top: 3px;
-    }
 
-    .plusIcon {
-        position: absolute;
-        z-index: 9999;
-        width: 30px;
-        height: 30px;
-        top: 12px;
-        left: 285px;
-    }
+.userControl>a {
+    color: #0088cc;
+    margin-top: 3px;
+}
+
+.plusIcon {
+    position: absolute;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: 285px;
+}
 
 
-    .upComingEvents{
-        position: relative;
-        width: 100%;
-        height: 340px;
-        margin: auto;
-    }
-    .headerEvents{
-        position: relative;
-        width: 100%;
-        height: 32px;
-        display: flex;
-        background: none;
-    }
-    .headerEvents .status{
-        position: relative;
-        margin-left: 201px;
-        display: none;
-    }
-    .headerEvents .petName{
-        position: relative;
-        margin-left: 800px;
-        display: none;
-    }
-    .headerEvents .taskDeadline{
-        position: relative;
-        margin-left: 1020px;
-        display: none;
-    }
-    .headerEvents .upComEvent{
-        position: relative;
-        width: auto;
-        font-size: 20px;
-        margin: auto;
-        color: #212121;
-        font-weight: bold;
-        font-size: 20px;
-    }
+.upComingEvents {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    margin: auto;
+}
 
-    .headerEvents > h5{
-        position: absolute;
-        font-size: 16px;
-        color: #ffffff;
-        margin-top: 20px;
-    }
-    .eventList{
-        position: absolute;
-        width: 95.6%;
-        height: auto;
-        flex-wrap: wrap;
-        background-color: #c2dcd9;
-        padding: 0% 2.2% 2.2% 2.2%;
-        border-radius: 10px;
-    }
-    .newEvent{
-        position: relative;
-        width: 95.6%;
-        height: 40px;
-        margin-top: 2.2%;
-        margin-left: 0px;
-        background-color: #ffffff;
-        padding: 1.1% 2.2%;
-        border-radius: 5px;
-        box-shadow: 1px 2px 3px #cccccc;
-    }
+.headerEvents {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    background: none;
+}
 
-    .newEvent .checkBoxDone >span {
-        position: relative;
-        display: none;
-        height: 40px;
-    }
-    .newEvent .checkBoxDone >input {
+.headerEvents .status {
+    position: relative;
+    margin-left: 201px;
+    display: none;
+}
 
-        position: relative;
-        height: 16px;
-        margin: 7.5% 0px;
+.headerEvents .petName {
+    position: relative;
+    margin-left: 800px;
+    display: none;
+}
 
-    }
-    .iconStatus{
-        position:relative;
-        display: none;
-    }
-    .eventContent{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 64%;
-        height: 20px;
-        left: 24%;
-        top: 2.2%;
-        margin-left: 0%;
-        margin-top: 3.3%;
-    }
-    .eventContent > h5{
-        position: absolute;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .eventPetName {
-        display: none;
-    }
-    .eventTime{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        margin-left: 982px;
-        width: 173px;
-        height: 40px;
-        background-color: #c2dcd9;
-    }
-    .eventTime > h5 {
-        position: relative;
-        font-size: 8px;
-        font-weight: bold;
-        top: 10px;
-        height: 20px;
-    }
-    .reqReplacement{
-        position: relative;
-        width: 100%;
-        height: 340px;
-        margin: auto;
-    }
-    .replacementList {
-        position: absolute;
-        width: 95.6%;
-        height: auto;
-        flex-wrap: wrap;
-        background-color: #c2dcd9;
-        padding: 0% 2.2% 2.2% 2.2%;
-        border-radius: 10px;
-    }
-    .petPicture{
-        position: absolute;
-        width: 10%;
-        height: auto;
-        margin-top: 1.1%;
-        right: 2.2%;
-        margin-left: auto;
-    }
+.headerEvents .taskDeadline {
+    position: relative;
+    margin-left: 1020px;
+    display: none;
+}
 
-    
+.headerEvents .upComEvent {
+    position: relative;
+    width: auto;
+    font-size: 20px;
+    margin: auto;
+    color: #212121;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.headerEvents>h5 {
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.eventList {
+    position: absolute;
+    width: 95.6%;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: #c2dcd9;
+    padding: 0% 2.2% 2.2% 2.2%;
+    border-radius: 10px;
+}
+
+.newEvent {
+    position: relative;
+    width: 95.6%;
+    height: 40px;
+    margin-top: 2.2%;
+    margin-left: 0px;
+    background-color: #ffffff;
+    padding: 1.1% 2.2%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #cccccc;
+}
+
+.newEvent .checkBoxDone>span {
+    position: relative;
+    display: none;
+    height: 40px;
+}
+
+.newEvent .checkBoxDone>input {
+
+    position: relative;
+    height: 16px;
+    margin: 7.5% 0px;
+
+}
+
+.iconStatus {
+    position: relative;
+    display: none;
+}
+
+.eventContent {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 64%;
+    height: 20px;
+    left: 24%;
+    top: 2.2%;
+    margin-left: 0%;
+    margin-top: 3.3%;
+}
+
+.eventContent>h5 {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.eventPetName {
+    display: none;
+}
+
+.eventTime {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 982px;
+    width: 173px;
+    height: 40px;
+    background-color: #c2dcd9;
+}
+
+.eventTime>h5 {
+    position: relative;
+    font-size: 8px;
+    font-weight: bold;
+    top: 10px;
+    height: 20px;
+}
+
+.reqReplacement {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    margin: auto;
+}
+
+.replacementList {
+    position: absolute;
+    width: 95.6%;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: #c2dcd9;
+    padding: 0% 2.2% 2.2% 2.2%;
+    border-radius: 10px;
+}
+
+.petPicture {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 1.1%;
+    right: 2.2%;
+    margin-left: auto;
+}
+
+
 .newEvent .taskBackdrop {
     position: relative;
     width: 20%;
